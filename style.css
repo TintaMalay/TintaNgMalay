@@ -262,6 +262,7 @@ body
     .chadz
     {
         max-width: 100vw;
+        max-height: 75vh;
         background-image: linear-gradient(to right, transparent 20%, #f00001 100%);
         animation: slideinR 2s ease-in backwards;
     }
