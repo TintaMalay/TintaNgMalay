@@ -1,0 +1,104 @@
+body 
+{
+    background-color: black;
+}
+
+@font-face {
+    font-family: Refin;
+    src: url("Fonts/Refine.ttf");
+}
+
+@font-face {
+    font-family: Ext;
+    src: url("Fonts/Extended.ttf");
+}
+
+@keyframes slidein 
+{
+    from {
+        opacity: 0;
+        transform: translate(-2rem);
+    }
+    to 
+    {
+        opcaity: 1;
+        transform: translate(0);
+    }
+}
+
+.title_fade
+{
+
+
+    background: linear-gradient(to bottom, #ff0000a1 0%, transparent 110%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+    
+    text-align: center;
+    line-height: 5rem;
+
+    margin-top: 5vh;
+
+    font-weight: 100rem;
+    font-size: 6rem;
+    font-family: Refin;
+}
+
+.thinlin 
+{
+    border: none;
+    border-top: 0.2vh solid #ffffff;
+    width: 80vw;
+
+    margin-left: 1vw auto;
+    margin-top: 1vh;
+}
+
+.bannersz
+{
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+
+    animation: slidein .8s ease-out forwards;
+}
+
+.redlin
+{
+    position: absolute;
+    top: 10%;
+    left: -25%;
+    width: 150vw;
+    height: 40vh;
+    border: none;
+    background-image: linear-gradient(to right, transparent 15% ,#ff0000a1 50%, transparent 85% );
+    z-index: -1;
+}
+
+.HEROBB
+{
+    background-image: url(Images/Banner.jpg);
+
+    background-size: cover;
+
+    margin: 7vw;
+    margin-top: 15vh;
+
+    width: 85%;
+    height: 25vh;
+
+    position: absolute;
+}
+
+.bannerheadder 
+{
+    color: #ffffff;
+    font-family: Refin;
+    font-size: 2rem;
+
+    margin-top: 8vh;
+
+    text-align: center;
+}
