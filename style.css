@@ -115,6 +115,16 @@ body
 
     text-align: center;
 }
+.bannerheadderZ
+{
+    color: #ffffff;
+    font-family: Refin;
+    font-size: 2rem;
+
+    margin-top: 8vh;
+
+    text-align: center;
+}
 
 .chadz
 {
@@ -150,17 +160,83 @@ body
     width: 75vw;
     color: white;
     font-family: Ext;
+    text-align: center;
+
     outline: none;
     border: none;
 
       animation: slideinR 1s ease-out backwards;
 
     transition: background-position 0.4s ease;
+
+    text-decoration: none;
 }
+
+.navigz
+{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+        justify-content: center;
+        gap:1rem;
+}
+
+.NaviButtRz
+{
+    background-image: linear-gradient(to right, #f00001 0%, black 40%, black 60%, red 100%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    height: 5vh;
+    width: 10w;
+    color: white;
+    font-family: Ext;
+    text-align: center;
+
+    border: none;
+
+      animation: slideinR 1s ease-out backwards;
+
+    transition: background-position 0.4s ease;
+
+    outline: none;
+    text-decoration: none;
+}
+
+.NaviButtLz
+{
+    background-image: linear-gradient(to right, #f00001 0%, black 40%, black 60%, red 100%);
+    background-position: left bottom;
+    background-size: 200% 100%;
+    height: 5vh;
+    width: 10w;
+    color: white;
+    font-family: Ext;
+    text-align: center;
+
+    border: none;
+
+      animation: slideinR 1s ease-out backwards;
+
+    transition: background-position 0.4s ease;
+
+    outline: none;
+    text-decoration: none;
+}
+
 
 .NaviButtR:hover
 {
     background-position: left bottom;
+}
+
+.NaviButtRz:hover
+{
+    background-position: left bottom;
+}
+.NaviButtLz:hover
+{
+    background-position: right bottom;
 }
 
 
@@ -205,6 +281,26 @@ body
     text-align: center;
 }
 
+.vidcon
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+
+    margin: auto;
+    
+    margin-top: 1rem;
+}
+
+.vidz
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (min-width: 768px)
 {
     .smthsmthz
@@ -223,6 +319,15 @@ body
     .NaviButtR
     {
         width: 50vw;
+    }
+
+    .NaviButtRz
+    {
+        width: 25vw;
+    }
+    .NaviButtLz
+    {
+        width: 25vw;
     }
 
     .bannersz
@@ -298,5 +403,34 @@ body
         font-size: 5rem;
         margin-left: 30vw;
         margin-bottom: 20vh;
+    }
+
+    .vidcon
+    {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        width: 30%;
+
+        margin: auto;
+    
+        margin-top: 1rem;
+    }
+
+    .vidz
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .navigz
+    {
+        display: grid;
+        grid-auto-flow: column  ;
+
+        justify-content: center;
+        gap:1rem;
     }
 }
